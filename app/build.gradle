@@ -1,5 +1,7 @@
-apply plugin: 'com.android.application'
+import com.mikemagss.kotlingradlebuildscriptsexercise.MyPlugin
 
+apply plugin: 'com.android.application'
+apply plugin: MyPlugin.class
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
