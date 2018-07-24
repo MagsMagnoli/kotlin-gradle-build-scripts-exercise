@@ -1,5 +1,6 @@
 import com.mikemagss.kotlingradlebuildscriptsexercise.DependencyVersions
 import com.mikemagss.kotlingradlebuildscriptsexercise.MyPlugin
+import com.mikemagss.kotlingradlebuildscriptsexercise.MyTask
 
 apply plugin: 'com.android.application'
 apply plugin: MyPlugin.class
@@ -33,4 +34,8 @@ dependencies {
     testImplementation "junit:junit:${DependencyVersions.Junit}"
     androidTestImplementation "com.android.support.test:runner:${DependencyVersions.AndroidTestRunner}"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:${DependencyVersions.Espresso}"
+}
+
+task("greetMyself", type: MyTask) {
+    yourName = "Mags"
 }
